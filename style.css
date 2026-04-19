@@ -2,19 +2,37 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: #ffffff;
 }
 
 .main-header {
-  background-color: rgba(0, 0, 0, 0.3);
-  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #da1717;
+  padding: 1rem;
+}
+
+.main-header nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.main-header nav a{
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.main-header nav a:hover{
+  color: #f0f0f0;
 }
 
 .title {
-  text-align: center;
   margin: 0;
-  font-size: 8em;
+  font-size: 2em;
   font-family: "Helvetica";
-  font-weight: normal;
+  font-weight: bold;
   color: white;
 }
 
