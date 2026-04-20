@@ -8,6 +8,7 @@
   </head>
 
   <body>
+    <!-- Navigation Bar -->
     <header class="main-header">
       <h1 class="title">Pokévault</h1>
       <nav>
@@ -15,6 +16,7 @@
         <a href="about.html">Collection</a>
       </nav>
     </header>
+    <!-- Pokemon Sets Bar -->
     <div class="pokemon-sets-container">
       <button class="scroll-button" onclick="document.querySelector('.sets-wrapper').scrollBy({ left: -800, behavior: 'smooth' })">
         ‹
@@ -96,21 +98,67 @@
         ›
       </button>
     </div>
-      <div id="card-container"></div>
+    <!-- Search Bar-->
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search for a card..." />
+      <button id="search-button">Search</button>
+    </div>
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Filter Bar -->
+      <div class="filter-bar">
+        <h3>Filter</h3>
+        
+        <!-- Card Type Filter -->
+        <div class="filter-section">
+          <h4>Card Type</h4>
+          <select id="card-type-filter">
+            <option value="">All Card Types</option>
+            <option value="Pokemon">Pokémon</option>
+            <option value="Trainer">Trainer</option>
+          </select>
+        </div>
+        
+        <!-- Pokémon Type Filter -->
+        <div class="filter-section">
+          <h4>Pokémon Type</h4>
+            <label><input class="fire" type="checkbox"><span class="type fire">Fire</span></label>
+            <label><input class="water" type="checkbox"><span class="type water">Water</span></label>
+            <label><input class="grass" type="checkbox"><span class="type grass">Grass</span></label>
+            <label><input class="electric" type="checkbox"><span class="type electric">Electric</span></label>
+            <label><input class="psychic" type="checkbox"><span class="type psychic">Psychic</span></label>
+            <label><input class="fighting" type="checkbox"><span class="type fighting">Fighting</span></label>
+            <label><input class="dark" type="checkbox"><span class="type dark">Dark</span></label>
+            <label><input class="metal" type="checkbox"><span class="type metal">Metal</span></label>
+            <label><input class="colorless" type="checkbox"><span class="type colorless">Colorless</span></label>
+            <label><input class="type fairy" type="checkbox"><span class="type fairy">Fairy</span></label>
+            <label><input class="type dragon" type="checkbox"><span class="type dragon">Dragon</span></label>
+        </div>
+
+        <!-- Card Rarity Filter -->
+        <div class="filter-section">
+          <h4>Card Rarity</h4>
+          <label><input class="rarity" type="checkbox"> Common</label>
+          <label><input class="rarity" type="checkbox"> Uncommon</label>
+          <label><input class="rarity" type="checkbox"> Rare</label>
+          <label><input class="rarity" type="checkbox"> Ultra Rare</label>
+        </div>
+      </div>
+      <!-- Card Grid -->
+       <div id="card-container"></div>
+    </div>
+
+    <!-- Card Template -->
     <div class="card" style="display: none">
       <div class="card-content">
-        <h2>TV Show Title</h2>
-        <img src="" alt="TV Show Poster" />
-        <ul>
-          <li>Bullet Point 1</li>
-          <li>Bullet Point 2</li>
-          <li>Bullet Point 3</li>
-        </ul>
+        <h2>Card Name</h2>
+        <img src="" alt="Pokemon Card" />
       </div>
     </div>
-    <div class="footer">
+
+    <!-- <div class="footer">
       <button onclick="quoteAlert()">Get A Quote!</button>
       <button onclick="removeLastCard()">Remove A Card!</button>
-    </div>
+    </div> -->
   </body>
 </html>
