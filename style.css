@@ -185,8 +185,7 @@ body {
 .type.fighting { background-color: #b45309; }
 .type.dark { background-color: #374151; }
 .type.metal { background-color: #9ca3af; }
-.type.colorless { background-color: #d1d5db; }
-.type.fairy { background-color: #ec4899; }
+.type.normal { background-color: #d1d5db; }
 .type.dragon { background-color: #6366f1; }
 
 input.fire { accent-color: #f97316; }
@@ -197,8 +196,7 @@ input.psychic { accent-color: #a855f7; }
 input.fighting { accent-color: #b45309; }
 input.dark { accent-color: #374151; }
 input.metal { accent-color: #9ca3af; }
-input.colorless { accent-color: #d1d5db; }
-input.fairy { accent-color: #ec4899; }
+input.normal { accent-color: #d1d5db; }
 input.dragon { accent-color: #6366f1; }
 
 input.rarity { accent-color: #000000; }
@@ -223,21 +221,17 @@ input.rarity { accent-color: #000000; }
 }
 
 .card {
-  background-color: #f8f8f8;
-  border: 1px solid #00000014;
+  background-color: #f8f8f800;
+  border: 1px solid #00000000;
   border-radius: 0.3rem;
-  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.card img {
+  object-fit: cover;
+  display: block;
 }
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
-}
-
-.card-content {
-  padding: 20px;
-  color: #777;
 }
 
 .card-content h2 {
