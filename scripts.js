@@ -52,6 +52,14 @@ function editCardContent(card, data) {
 // This calls the addCards() function when the page is first loaded
 document.addEventListener("DOMContentLoaded", showCards);
 
+const button = document.getElementById("to-top-button");
+button.addEventListener("click", () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+
 function quoteAlert() {
   console.log("Button Clicked!");
   alert(
