@@ -2,7 +2,7 @@
 let cards = [
   // Perfect Order Set
   {
-    name: "Mega Zygard ex",
+    name: "Mega Zygarde ex",
     image: "assets/perfect-order/megaZygardeEx.png",
     set: "Perfect Order", 
     cardType: "Pokémon",
@@ -550,7 +550,7 @@ let cards = [
     image: "assets/obsidian-flames/charizardEx.png",
     set: "Obsidian Flames", 
     cardType: "Pokémon",
-    pokemonType: "Fire",
+    pokemonType: "Dark",
     rarity: "Special Illustration Rare"
   },
   {
