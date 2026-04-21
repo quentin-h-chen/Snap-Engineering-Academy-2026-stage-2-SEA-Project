@@ -4,6 +4,7 @@
     <title>PokéVault</title>
     <meta name="description" content="A Catalog of Pokemon Cards" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="imageg" href="assets/pokevaultLogo.png">
   </head>
 
   <body>
@@ -14,7 +15,6 @@
         <h1 class="title">PokéVault</h1>
           <div class="search-container">
             <input type="text" id="search-input" placeholder="Search for a card..." />
-            <button id="search-button">Search</button>
           </div>
       </div>
       <!-- <nav>
@@ -24,80 +24,77 @@
     </header>
     <!-- Pokemon Sets Bar -->
     <div class="pokemon-sets-container">
-      <button class="scroll-button" onclick="document.querySelector('.sets-wrapper').scrollBy({ left: -800, behavior: 'smooth' })">
+      <button class="scroll-button" onclick="document.querySelector('.sets-wrapper').scrollBy({ left: -1000, behavior: 'smooth' })">
         ‹
       </button>
       <div class="sets-wrapper"> 
         <div class="sets-list">
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Perfect Order">
             <img src="assets/set-logos/perfectOrder.png" alt="Perfect Order Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Ascended Heroes">
             <img src="assets/set-logos/ascendedHeroes.png" alt="Ascended Heroes Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Phantasmal Flames">
             <img src="assets/set-logos/phantasmalFlames.png" alt="Phantasmal Flames Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Mega Evolution">
             <img src="assets/set-logos/megaEvolution.png" alt="Mega Evolution Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Black Bolt">
             <img src="assets/set-logos/blackBolt.png" alt="Black Bolt Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="White Flare">
             <img src="assets/set-logos/whiteFlare.png" alt="White Flare Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Destined Rivals">
             <img src="assets/set-logos/destinedRivals.png" alt="Destined Rivals Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Journey Together">
             <img src="assets/set-logos/journeyTogether.png" alt="Journey Together Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Prismatic Evolutions">
             <img src="assets/set-logos/prismaticEvolutions.png" alt="Prismatic Evolutions Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Surging Sparks">
             <img src="assets/set-logos/surgingSparks.png" alt="Surging Sparks Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Temporal Forces">
             <img src="assets/set-logos/temporalForces.png" alt="Temporal Forces Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Shrouded Fable">
             <img src="assets/set-logos/shroudedFable.png" alt="Shrouded Fable Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Twilight Masquerade">
             <img src="assets/set-logos/twilightMasquerade.png" alt="Twilight Masquerade Logo">
           </div>
-          <div class="pokemon-set">
-            <img src="assets/set-logos/temporalForces.png" alt="Temporal Forces Logo">
-          </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Paldean Fates">
             <img src="assets/set-logos/paldeanFates.png" alt="Paldean Fates Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Paradox Rift">
             <img src="assets/set-logos/paradoxRift.png" alt="Paradox Rift Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="151">
             <img src="assets/set-logos/151.png" alt="151 Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Obsidian Flames">
             <img src="assets/set-logos/obsidianFlames.png" alt="Obsidian Flames Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Paldea Evolved">
             <img src="assets/set-logos/paldeaEvolved.png" alt="Paldea Evolved Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Scarlet & Violet">
             <img src="assets/set-logos/scarletViolet.png" alt="Scarlet & Violet Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Crown Zenith">
             <img src="assets/set-logos/crownZenith.png" alt="Crown Zenith Logo">
           </div>
-          <div class="pokemon-set">
+          <div class="pokemon-set" data-set="Silver Tempest">
             <img src="assets/set-logos/silverTempest.png" alt="Silver Tempest Logo">
           </div>
         </div>
       </div> 
-      <button class="scroll-button" onclick="document.querySelector('.sets-wrapper').scrollBy({ left: 800, behavior: 'smooth' })">
+      <button class="scroll-button" onclick="document.querySelector('.sets-wrapper').scrollBy({ left: 1000, behavior: 'smooth' })">
         ›
       </button>
     </div>
@@ -110,40 +107,40 @@
     <div class="main-content">
       <!-- Filter Bar -->
       <div class="filter-bar">
-        <h3>Filter</h3>
+        <h2>Filter</h2>
         
         <!-- Card Type Filter -->
         <div class="filter-section">
-          <h4>Card Type</h4>
+          <h3>Card Type</h3>
           <select id="card-type-filter">
             <option value="">All Card Types</option>
-            <option value="Pokemon">Pokémon</option>
+            <option value="Pokémon">Pokémon</option>
             <option value="Trainer">Trainer</option>
           </select>
         </div>
         
         <!-- Pokémon Type Filter -->
         <div class="filter-section">
-          <h4>Pokémon Type</h4>
-            <label><input class="fire" type="checkbox"><span class="type fire">Fire</span></label>
-            <label><input class="water" type="checkbox"><span class="type water">Water</span></label>
-            <label><input class="grass" type="checkbox"><span class="type grass">Grass</span></label>
-            <label><input class="electric" type="checkbox"><span class="type electric">Electric</span></label>
-            <label><input class="psychic" type="checkbox"><span class="type psychic">Psychic</span></label>
-            <label><input class="fighting" type="checkbox"><span class="type fighting">Fighting</span></label>
-            <label><input class="dark" type="checkbox"><span class="type dark">Dark</span></label>
-            <label><input class="metal" type="checkbox"><span class="type metal">Metal</span></label>
-            <label><input class="normal" type="checkbox"><span class="type normal">Normal</span></label>
-            <label><input class="type dragon" type="checkbox"><span class="type dragon">Dragon</span></label>
+          <h3>Pokémon Type</h3>
+            <label><input class="fire" value="Fire" type="checkbox"><span class="type fire">Fire</span></label>
+            <label><input class="water" value="Water" type="checkbox"><span class="type water">Water</span></label>
+            <label><input class="grass" value="Grass" type="checkbox"><span class="type grass">Grass</span></label>
+            <label><input class="electric" value="Electric" type="checkbox"><span class="type electric">Electric</span></label>
+            <label><input class="psychic" value="Psychic" type="checkbox"><span class="type psychic">Psychic</span></label>
+            <label><input class="fighting" value="Fighting" type="checkbox"><span class="type fighting">Fighting</span></label>
+            <label><input class="dark" value="Dark" type="checkbox"><span class="type dark">Dark</span></label>
+            <label><input class="metal" value="Metal" type="checkbox"><span class="type metal">Metal</span></label>
+            <label><input class="normal" value="Normal" type="checkbox"><span class="type normal">Normal</span></label>
+            <label><input class="type dragon" value="Dragon" type="checkbox"><span class="type dragon">Dragon</span></label>
         </div>
 
         <!-- Card Rarity Filter -->
         <div class="filter-section">
-          <h4>Card Rarity</h4>
-          <label><input class="rarity" type="checkbox"> Rare</label>
-          <label><input class="rarity" type="checkbox"> Illustration Rare</label>
-          <label><input class="rarity" type="checkbox"> Ultra Rare</label>
-          <label><input class="rarity" type="checkbox"> Special Illustration Rare</label>
+          <h3>Card Rarity</h3>
+          <label><input class="rarity" value="Rare" type="checkbox"> Rare</label>
+          <label><input class="rarity" value="Illustration Rare" type="checkbox"> Illustration Rare</label>
+          <label><input class="rarity" value="Ultra Rare" type="checkbox"> Ultra Rare</label>
+          <label><input class="rarity" value="Special Illustration Rare" type="checkbox"> Special Illustration Rare</label>
         </div>
       </div>
       <!-- Card Grid -->
@@ -160,6 +157,7 @@
       <button onclick="removeLastCard()">Remove A Card!</button>
     </div> -->
     <button id="to-top-button">↑</button>
+    <button id="reset-filters-button">Reset Filters</button>
     <script type="text/javascript" src="card-data.js"></script>
     <script type="text/javascript" src="scripts.js"></script>
   </body>
