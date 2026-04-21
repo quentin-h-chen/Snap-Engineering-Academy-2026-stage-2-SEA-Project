@@ -10,7 +10,7 @@ let cards = [
     rarity: "Special Illustration Rare"
   },
   {
-    name: "Yeltal ex",
+    name: "Yveltal ex",
     image: "assets/perfect-order/yveltalEx.png",
     set: "Perfect Order", 
     cardType: "Pokémon",
@@ -99,6 +99,40 @@ let cards = [
     set: "Phantasmal Flames", 
     cardType: "Pokémon",
     pokemonType: "Water",
+    rarity: "Rare"
+  },
+
+  // Mega Evolution
+  {
+    name: "Mega Latias Ex",
+    image: "assets/mega-evolution/megaLatiasEx.png",
+    set: "Mega Evolution", 
+    cardType: "Pokémon",
+    pokemonType: "Dragon",
+    rarity: "Special Illustration Rare"
+  },
+  {
+    name: "Mega Lucario Ex",
+    image: "assets/mega-evolution/megaLucarioEx.png",
+    set: "Mega Evolution", 
+    cardType: "Pokémon",
+    pokemonType: "Fighting",
+    rarity: "Ultra Rare"
+  },
+  {
+    name: "Stufful",
+    image: "assets/mega-evolution/stufful.png",
+    set: "Mega Evolution", 
+    cardType: "Pokémon",
+    pokemonType: "Normal",
+    rarity: "Illustration Rare"
+  },
+  {
+    name: "Meganium",
+    image: "assets/mega-evolution/meganium.png",
+    set: "Mega Evolution", 
+    cardType: "Pokémon",
+    pokemonType: "Grass",
     rarity: "Rare"
   },
 
@@ -422,7 +456,7 @@ let cards = [
     image: "assets/paldean-fates/charizardExPF.png",
     set: "Paldean Fates", 
     cardType: "Pokémon",
-    pokemonType: "Dragon",
+    pokemonType: "Dark",
     rarity: "Special Illustration Rare"
   },
   {
