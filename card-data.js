@@ -550,7 +550,7 @@ let cards = [
     image: "assets/obsidian-flames/charizardEx.png",
     set: "Obsidian Flames", 
     cardType: "Pokémon",
-    pokemonType: "Fire",
+    pokemonType: "Dark",
     rarity: "Special Illustration Rare"
   },
   {
