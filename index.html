@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>Pokévault | Home</title>
+    <title>PokéVault</title>
     <meta name="description" content="A Catalog of Pokemon Cards" />
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="card-data.js"></script>
@@ -11,15 +11,22 @@
   <body>
     <!-- Navigation Bar -->
     <header class="main-header">
-      <h1 class="title">Pokévault</h1>
-      <nav>
+      <div class="logo-container">
+        <img class="logo" src="assets/pokevaultLogo.png" alt="Pokévault logo">
+        <h1 class="title">PokéVault</h1>
+          <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for a card..." />
+            <button id="search-button">Search</button>
+          </div>
+      </div>
+      <!-- <nav>
         <a href="index.html">Home</a>
         <a href="about.html">Collection</a>
-      </nav>
+      </nav> -->
     </header>
     <!-- Pokemon Sets Bar -->
     <div class="pokemon-sets-container">
-      <button class="scroll-button" onclick="document.querySelector('.sets-wrapper').scrollBy({ left: -900, behavior: 'smooth' })">
+      <button class="scroll-button" onclick="document.querySelector('.sets-wrapper').scrollBy({ left: -800, behavior: 'smooth' })">
         ‹
       </button>
       <div class="sets-wrapper"> 
@@ -92,15 +99,15 @@
           </div>
         </div>
       </div> 
-      <button class="scroll-button" onclick="document.querySelector('.sets-wrapper').scrollBy({ left: 900, behavior: 'smooth' })">
+      <button class="scroll-button" onclick="document.querySelector('.sets-wrapper').scrollBy({ left: 800, behavior: 'smooth' })">
         ›
       </button>
     </div>
     <!-- Search Bar-->
-    <div class="search-container">
+    <!-- <div class="search-container">
       <input type="text" id="search-input" placeholder="Search for a card..." />
       <button id="search-button">Search</button>
-    </div>
+    </div> -->
     <!-- Main Content -->
     <div class="main-content">
       <!-- Filter Bar -->
