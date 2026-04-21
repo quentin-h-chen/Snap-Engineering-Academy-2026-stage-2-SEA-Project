@@ -252,10 +252,6 @@ body {
   margin-bottom: 0.7rem;
 }
 
-#card-type-filter {
-  font-size: 0.8rem;
-}
-
 .type {
   padding: 0.1rem 0.5rem;
   border-radius: 0.8rem;
@@ -296,6 +292,7 @@ input.rarity { accent-color: #000000; }
   border: 1px solid rgba(255, 255, 255, 0.212);
   background-color: #ffffff21;
   color: white;
+  font-size: 0.8rem;
 }
 
 #card-type-filter:focus {
@@ -316,7 +313,10 @@ input.rarity { accent-color: #000000; }
   transition: transform 0.25s ease, box-shadow 0.25s ease;
   border-radius: 0.6rem;
 }
+
 .card img {
+  width: 100%;
+  height: auto;
   object-fit: cover;
   display: block;
 }
@@ -332,11 +332,6 @@ input.rarity { accent-color: #000000; }
 .card-content h2 {
   margin-top: 0;
   font-size: 20px;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
 }
 
 #to-top-button {
